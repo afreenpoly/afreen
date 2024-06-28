@@ -3,12 +3,11 @@ const Featured = () => {
     <div className="">
       <div className="flex py-6 justify-center">
         <div className="w-1/2">
-          <h2>Example Project</h2>
+          <h2>V-Mail</h2>
           <p>
-            A web app for visualizing personalized Spotify data. View your top
-            artists, top tracks, recently played tracks, and detailed audio
-            information about each track. Create and save new playlists of
-            recommended tracks based on your existing playlists and more.
+            An email platform which helps the visually impaired individuals to
+            compose,send and receive mails solely using their voice only. TTS
+            and STT are used for the interaction between user and the system
           </p>
         </div>
         <div className="flex">
@@ -29,12 +28,11 @@ const Featured = () => {
           />
         </div>
         <div className="w-1/2">
-          <h2>Example Project</h2>
+          <h2>Exam Seat Arrangement System</h2>
           <p>
-            A web app for visualizing personalized Spotify data. View your top
-            artists, top tracks, recently played tracks, and detailed audio
-            information about each track. Create and save new playlists of
-            recommended tracks based on your existing playlists and more.
+            A web application designed under my leadership, efficiently
+            organizing students for exams in a fair and equitable manner,while
+            also preventing malpractice.
           </p>
         </div>
       </div>

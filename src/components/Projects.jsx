@@ -1,15 +1,15 @@
 const Projects = () => {
   return (
-    <div>
-      <h1 className="mb-3">Projects</h1>
+    <div id="projects" className="mt-7">
+      <h1 className="mb-3 text-3xl font-bold">Projects</h1>
 
       <div className="grid grid-cols-2 gap-6 font-poppins">
-        <div className="flex border-2 border-y-purple-600 rounded-3xl pr-5 py-7 hover:bg-gradient-to-bl bg-gradient-to-br  from-projectcard via-navbar to-backfill">
+        <div className="flex border-2 shadow-2xl border-y-purple-600 rounded-3xl pr-5 py-7 hover:bg-gradient-to-bl bg-gradient-to-br from-projectcard via-navbar to-backfill">
           <div className="flex">
             <img
               className="object-contain"
               src="/src/assets/book.png"
-              alt=""
+              alt="BMS"
               width="200"
             />
           </div>
@@ -19,8 +19,8 @@ const Projects = () => {
               A simple web application for managing books and performing CRUD
               operations on books.
             </p>
-            <div className="w-fit border-2 border-x-purple-600 rounded-full hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
-              <button className="text-sm text-white">Github</button>
+            <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
+              <button className="text-sm text-white ">Github</button>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Projects = () => {
             <img
               className="object-contain"
               src="/src/assets/todo.png"
-              alt=""
+              alt="To-Do"
               width="200"
             />
           </div>
@@ -40,8 +40,8 @@ const Projects = () => {
               ToDo app that helps you stay organized and manage your tasks
               effortlessly. Add, complete, and delete tasks with ease.
             </p>
-            <div className="w-fit border-2 border-x-purple-600 rounded-full hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
-              <button className="text-sm text-white">Github</button>
+            <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
+              <button className="text-sm text-white ">Github</button>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Projects = () => {
             <img
               className="object-contain"
               src="/src/assets/insta.png"
-              alt=""
+              alt="Automation"
               width="200"
             />
           </div>
@@ -61,13 +61,11 @@ const Projects = () => {
               A flask web app which automates interaction within the social
               media platform, automates several functions like commenting.
             </p>
-            <div className="w-fit border-2 border-x-purple-600 rounded-full hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
-              <button className="text-sm text-white">Github</button>
+            <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
+              <button className="text-sm text-white ">Github</button>
             </div>
           </div>
         </div>
-
-        
       </div>
     </div>
   );

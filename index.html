@@ -1,13 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
     <title>Afreen Portfolio</title>
+    <style>
+      .trail-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        pointer-events: none;
+      }
+      .trail {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        transition: transform 0.01s, opacity 0.1s;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const trailContainer = document.createElement("div");
+        trailContainer.className = "trail-container";
+        document.body.appendChild(trailContainer);
+
+        const trailCount = 20;
+        const trails = [];
+
+        for (let i = 0; i < trailCount; i++) {
+          const div = document.createElement("div");
+          div.classList.add("trail");
+          trailContainer.appendChild(div);
+          trails.push(div);
+        }
+
+        let currentTrail = 0;
+        document.addEventListener("mousemove", (event) => {
+          const trail = trails[currentTrail];
+
+          setTimeout(() => {
+            trail.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+            trail.style.opacity = 1;
+
+            setTimeout(() => {
+              trail.style.opacity = 0;
+            }, 300);
+          }, currentTrail * 10); // Adjust this value to control the delay between each circle
+
+          currentTrail = (currentTrail + 1) % trailCount;
+        });
+      });
+    </script>
   </body>
 </html>

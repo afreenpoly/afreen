@@ -1,0 +1,84 @@
+@keyframes randomWobble {
+  0% {
+    transform: translate(0, 0);
+  }
+  12.5% {
+    transform: translate(10px, -10px);
+  }
+  25% {
+    transform: translate(-10px, 10px);
+  }
+  37.5% {
+    transform: translate(10px, 10px);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  62.5% {
+    transform: translate(5px, -5px);
+  }
+  75% {
+    transform: translate(-5px, 5px);
+  }
+  87.5% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+.profile-container {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Ensure it is above the trail container */
+}
+
+
+.profile-details {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative; /* Ensure the circle is positioned within this container */
+}
+
+circle {
+  position: absolute;
+  right: -30px; /* Adjust as needed */
+  top: -50px; /* Adjust as needed */
+  width: 600px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
+  background: linear-gradient(90deg, #6f8301, #0791bb);
+  border-radius: 50%;
+  z-index: -1; /* Ensure the circle is behind the text and image */
+  animation: randomWobble 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(30deg, #0be730, #0791bb, #ceec1f);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.28;
+  animation: gradientShift 5s ease-in-out infinite; /* Add animation */
+}
+
+
+

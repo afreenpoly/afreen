@@ -1,9 +1,10 @@
-import React from 'react'
-
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="text-center pt-4">
+      <p>Made with love using React</p>
+      <p>Afreen Poly &copy; </p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

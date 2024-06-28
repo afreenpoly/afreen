@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         navbar: "#1A0B2E",
-        backfill: "#11071F",
+        backfill: "#200d3b",
         projectcard: "#251043",
       },
       backgroundImage: {
@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins"],
+        "bebas-neue": ['"Bebas Neue"', "sans-serif"],
       },
     },
   },

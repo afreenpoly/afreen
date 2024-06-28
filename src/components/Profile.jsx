@@ -1,11 +1,20 @@
+import "./styles.css";
 const Profile = () => {
   return (
-    <div className="">
-      <div className="flex justify-center">
-        <img src="/src/assets/profilepic.webp" alt="" width="100rem" />
-        <div className="px-5">
-          <h2>Afreen Poly</h2>
-          <h3>Frontend Developer</h3>
+    <div className="profile-container">
+      <div className="flex justify-between items-center">
+        <div className="text-section">
+          <h1 className="gradient-text">Dream.</h1>
+          <h1 className="gradient-text">Design.</h1>
+          <h1 className="gradient-text">Develop.</h1>
+        </div>
+        <div className="profile-details flex items-center">
+          {/* <div className="circle"></div> */}
+          <img src="/src/assets/afreendp.png" alt="" width="250" />
+          <div className="pl-5 font-poppins">
+            <h2 className="font-bold text-5xl">Afreen Poly</h2>
+            <h3 className="text-md">Frontend Developer</h3>
+          </div>
         </div>
       </div>
 
