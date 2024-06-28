@@ -1,33 +1,28 @@
-@keyframes randomWobble {
-  0% {
-    transform: translate(0, 0);
-  }
-  12.5% {
-    transform: translate(10px, -10px);
-  }
-  25% {
-    transform: translate(-10px, 10px);
-  }
-  37.5% {
-    transform: translate(10px, 10px);
-  }
-  50% {
-    transform: translate(-10px, -10px);
-  }
-  62.5% {
-    transform: translate(5px, -5px);
-  }
-  75% {
-    transform: translate(-5px, 5px);
-  }
-  87.5% {
-    transform: translate(5px, 5px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+@keyframes randomShapeChange {
+            0% {
+                border-radius: 50%;
+            }
+            25% {
+                border-radius: 20% 80% 50% 50% / 50% 50% 20% 80%;
+            }
+            50% {
+                border-radius: 50% 20% 50% 20% / 20% 50% 20% 50%;
+            }
+            75% {
+                border-radius: 30% 70% 50% 50% / 50% 50% 30% 70%;
+            }
+            100% {
+                border-radius: 50%;
+            }
+        }
 
+.avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #472a70;
+        }
 
 .profile-container {
   width: 100%;
@@ -50,10 +45,10 @@ circle {
   top: -50px; /* Adjust as needed */
   width: 600px; /* Adjust as needed */
   height: 500px; /* Adjust as needed */
-  background: linear-gradient(90deg, #6f8301, #0791bb);
+  background: linear-gradient(90deg, #6f8301, #667BC6);
   border-radius: 50%;
   z-index: -1; /* Ensure the circle is behind the text and image */
-  animation: randomWobble 3s ease-in-out infinite;
+  animation: randomWobble 10s  ease-in-out infinite;
 }
 
 @keyframes gradientShift {
@@ -73,7 +68,7 @@ circle {
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 90px;
+  font-size: 110px;
   font-weight: bold;
   margin: 0;
   line-height: 1.28;

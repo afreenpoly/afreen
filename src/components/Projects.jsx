@@ -1,7 +1,7 @@
 const Projects = () => {
   return (
-    <div id="projects" className="mt-7">
-      <h1 className="mb-3 text-3xl font-bold">Projects</h1>
+    <div id="projects" className="mt-4">
+      <h1 className="mt-3 mb-6 text-3xl font-bold">Projects</h1>
 
       <div className="grid grid-cols-2 gap-6 font-poppins">
         <div className="flex border-2 shadow-2xl border-y-purple-600 rounded-3xl pr-5 py-7 hover:bg-gradient-to-bl bg-gradient-to-br from-projectcard via-navbar to-backfill">
