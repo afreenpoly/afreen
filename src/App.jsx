@@ -30,7 +30,11 @@ const App = () => {
       </div>
       <div className="pt-7 pb-2 px-40 bg-backfill">
         <Profile />
+      </div>
+      <div className="pt-7 pb-2 px-5 bg-backfill">
         <Featured />
+      </div>
+      <div className="pt-7 pb-2 px-40 bg-backfill">
         <Projects />
         <Contact />
         <Footer />
