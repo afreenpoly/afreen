@@ -1,0 +1,48 @@
+.fixed {
+  position: fixed;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-indigo-600 {
+  background-color: #4c51bf;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:bg-indigo-500:hover {
+  background-color: #434190;
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.transition-opacity {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

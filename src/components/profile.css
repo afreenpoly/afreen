@@ -1,0 +1,148 @@
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #472a70;
+}
+
+.profile-details{
+	z-index:5;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 96%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+  border-radius: 100%;
+}
+
+.circles li:nth-child(1) {
+  left: 15%;
+  width: 50px;
+  height: 50px;
+}
+
+.circles li:nth-child(2) {
+  left: 24%;
+  width: 30px;
+  height: 30px;
+}
+
+.circles li:nth-child(3) {
+  left: 36%;
+  width: 60px;
+  height: 60px;
+}
+
+.circles li:nth-child(4) {
+  left: 47%;
+  width: 50px;
+  height: 50px;
+}
+
+.circles li:nth-child(5) {
+  left: 53%;
+  width: 30px;
+  height: 30px;
+}
+
+.circles li:nth-child(6) {
+  left: 60%;
+  width: 60px;
+  height: 60px;
+}
+
+.circles li:nth-child(7) {
+  left: 75%;
+  width: 50px;
+  height: 50px;
+}
+
+.circles li:nth-child(8) {
+  left: 84%;
+  width: 30px;
+  height: 30px;
+}
+
+.circles li:nth-child(9) {
+  left: 96%;
+  width: 60px;
+  height: 60px;
+}
+
+.circles li:nth-child(10) {
+  left: 80%;
+  width: 40px;
+  height: 40px;
+}
+
+.circles li:nth-child(11) {
+  left: 90%;
+  width: 35px;
+  height: 35px;
+}
+
+.circles li:nth-child(12) {
+  left: 98%;
+  width: 45px;
+  height: 45px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  75% {
+    transform: translateY(-500px) rotate(320deg);
+    opacity: 0.2;
+    border-radius: 50%;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 100%;
+  }
+}
+
+/* Dream Design Develop */
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(30deg, #0be730, #0791bb, #ceec1f);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 110px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.28;
+  animation: gradientShift 5s ease-in-out infinite; /* Add animation */
+}

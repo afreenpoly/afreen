@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,jsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
       colors: {
@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins"],
         "bebas-neue": ['"Bebas Neue"', "sans-serif"],
+        "dancing-script": ['"Dancing Script"', "cursive"],
       },
     },
   },

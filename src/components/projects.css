@@ -1,0 +1,28 @@
+@keyframes fade-in {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#bms,#todo {
+    opacity: 0;
+    animation: fade-in 8s ease forwards;
+    /* Assuming these properties are custom attributes */
+    animation-timeline: view(); /* Custom property, may need a custom implementation */
+    animation-range-start: 10px; /* Custom property, may need a custom implementation */
+    animation-range-end: 400px; /* Custom property, may need a custom implementation */
+}
+
+#auto {
+    opacity: 0;
+    animation: fade-in 8s ease forwards;
+    /* Assuming these properties are custom attributes */
+    animation-timeline: view(); /* Custom property, may need a custom implementation */
+    animation-range-start: 50px; /* Custom property, may need a custom implementation */
+    animation-range-end: 400px; /* Custom property, may need a custom implementation */
+}

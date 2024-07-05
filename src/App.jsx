@@ -1,11 +1,28 @@
+import { useState, useEffect } from "react";
 import Contact from "./components/Contact";
 import Featured from "./components/Featured";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
+import BackToTop from "./components/BackToTop";
+import Spinner from "./components/Spinner"; // Import Spinner
+import "./index.css";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a network request
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); // Change the delay as needed
+  }, []);
+
+  if (loading) {
+    return <Spinner />;
+  }
+
   return (
     <div className="text-white ">
       <div>
@@ -14,10 +31,11 @@ const App = () => {
       <div className="pt-7 pb-2 px-40 bg-backfill">
         <Profile />
         <Featured />
-        <Projects/>
-        <Contact/>
-        <Footer/>
+        <Projects />
+        <Contact />
+        <Footer />
       </div>
+      <BackToTop />
     </div>
   );
 };
