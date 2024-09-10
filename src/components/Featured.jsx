@@ -1,4 +1,5 @@
 import { FaGithub } from "react-icons/fa";
+import computerImage from "../assets/computer.jpeg";
 import { CiSettings } from "react-icons/ci";
 
 const Featured = () => {
@@ -27,9 +28,9 @@ const Featured = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end w-full img1">
+        <div className="flex justify-end w-full img1">         
           <img
-            src="/src/assets/computer.jpeg"
+            src={computerImage}
             alt="computer image"
             className="w-96"
           />
