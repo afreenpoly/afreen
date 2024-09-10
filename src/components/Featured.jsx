@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
-import computerImage from "../assets/computer.jpeg";
+import vmailImage from "../assets/computer.jpeg";
+import examImage from "../assets/laptop.jpeg";
 import { CiSettings } from "react-icons/ci";
 
 const Featured = () => {
@@ -30,8 +31,8 @@ const Featured = () => {
         </div>
         <div className="flex justify-end w-full img1">         
           <img
-            src={computerImage}
-            alt="computer image"
+            src={vmailImage}
+            alt="Vmail image"
             className="w-96"
           />
         </div>
@@ -58,8 +59,8 @@ const Featured = () => {
         </div>
         <div className="flex justify-end w-full img2">
           <img
-            src="/src/assets/laptop.jpg"
-            alt="computer image"
+            src={examImage}
+            alt="exam seat arrangement image"
             className="w-96"
           />
         </div>

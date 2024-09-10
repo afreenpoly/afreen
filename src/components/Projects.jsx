@@ -1,4 +1,7 @@
 import "./projects.css";
+import bookImage from "../images/book.png";
+import todoImage from "../images/todo.png";
+import instaImage from "../images/insta.png";
 
 const Projects = () => {
   return (
@@ -13,7 +16,7 @@ const Projects = () => {
           <div className="flex">
             <img
               className="object-contain"
-              src="/src/assets/book.png"
+              src={bookImage}
               alt="BMS"
               width="200"
             />
@@ -37,7 +40,7 @@ const Projects = () => {
           <div className="flex">
             <img
               className="object-contain"
-              src="/src/assets/todo.png"
+              src={todoImage}
               alt="To-Do"
               width="200"
             />
@@ -61,7 +64,7 @@ const Projects = () => {
           <div className="flex">
             <img
               className="object-contain"
-              src="/src/assets/insta.png"
+              src={instaImage}
               alt="Automation"
               width="200"
             />
