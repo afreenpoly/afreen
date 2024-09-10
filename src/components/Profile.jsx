@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import afreendpImage from '/src/assets/afreendp.png';
 import "./profile.css";
 
 const Profile = () => {
@@ -25,7 +26,7 @@ const Profile = () => {
           <div className="profile-details flex items-center">
             <div className="pl-5 font-poppins  text-center">
               <div className="flex justify-center items-center">
-                <img className="avatar" src="/src/assets/afreendp.png" alt="" />
+              <img className="avatar" src={afreendpImage} alt="Afreen Profile Photo" />
               </div>
               <h2 className="font-bold text-5xl">Afreen Poly</h2>
               <h3 className="text-md">Frontend Developer</h3>

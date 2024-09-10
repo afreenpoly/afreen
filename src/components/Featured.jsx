@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import vmailImage from "../assets/computer.jpeg";
-import examImage from "../assets/laptop.jpeg";
+import examImage from "../assets/laptop.jpg";
 import { CiSettings } from "react-icons/ci";
 
 const Featured = () => {
