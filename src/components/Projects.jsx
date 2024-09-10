@@ -1,7 +1,7 @@
 import "./projects.css";
-import bookImage from "../images/book.png";
-import todoImage from "../images/todo.png";
-import instaImage from "../images/insta.png";
+import bookImage from "../assets/book.png";
+import todoImage from "../assets/todo.png";
+import instaImage from "../assets/insta.png";
 
 const Projects = () => {
   return (
