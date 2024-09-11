@@ -11,7 +11,7 @@ const Navbar = () => {
           </button>
         </Link>
       </div>
-      <div className="navbar flex gap-x-4 font-bebas-neue text-2xl items-center">
+      <div className="navbar flex gap-x-4 font-poppins text-xl items-center">
         <Link to="projects" smooth={true} offset={-19} duration={700}>
           <button className="opacity-45 hover:opacity-100">Projects</button>
         </Link>
