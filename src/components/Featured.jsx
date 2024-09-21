@@ -20,12 +20,24 @@ const Featured = () => {
               STT are used for the interaction between the user and the system.
             </p>
             <div className="flex justify-center space-x-4 mt-4">
-              <button className="p-2">
-                <FaGithub className="text-3xl" />
-              </button>
-              <button className="p-2">
-                <CiSettings className="text-3xl" />
-              </button>
+              <a
+                href="https://github.com/afreenpoly/V-Mail"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="p-2">
+                  <FaGithub className="text-3xl" />
+                </button>
+              </a>
+              {/* <a
+                href="https://your-settings-link.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="p-2">
+                  <CiSettings className="text-3xl" />
+                </button>
+              </a> */}
             </div>
           </div>
         </div>
@@ -61,12 +73,22 @@ const Featured = () => {
               while also preventing malpractice.
             </p>
             <div className="flex justify-center space-x-4 mt-4">
-              <button className="p-2">
-                <FaGithub className="text-3xl" />
-              </button>
-              <button className="p-2">
-                <CiSettings className="text-3xl" />
-              </button>
+              <a
+                href="https://github.com/afreenpoly/Exam-Seat-Arrangement"
+                target="_blank"
+              >
+                <button className="p-2">
+                  <FaGithub className="text-3xl" />
+                </button>
+              </a>
+              <a
+                href="https://exam-seat-arrangement.onrender.com/"
+                target="_blank"
+              >
+                <button className="p-2" title="Live demo">
+                  <CiSettings className="text-3xl" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

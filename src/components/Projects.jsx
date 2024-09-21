@@ -2,6 +2,7 @@ import "./projects.css";
 import bookImage from "../assets/book.png";
 import todoImage from "../assets/todo.png";
 import instaImage from "../assets/insta.png";
+import ProductImage from "../assets/pma.png";
 
 const Projects = () => {
   return (
@@ -28,7 +29,12 @@ const Projects = () => {
               operations on books.
             </p>
             <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
-              <button className="text-sm text-white ">Github</button>
+              <a
+                href="https://github.com/afreenpoly/Book-Management"
+                target="_blank"
+              >
+                <button className="text-sm text-white ">Github</button>
+              </a>
             </div>
           </div>
         </div>
@@ -52,7 +58,9 @@ const Projects = () => {
               effortlessly. Add, complete, and delete tasks with ease.
             </p>
             <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
-              <button className="text-sm text-white ">Github</button>
+              <a href="https://github.com/afreenpoly/todoapp" target="_blank">
+                <button className="text-sm text-white ">Github</button>
+              </a>
             </div>
           </div>
         </div>
@@ -76,7 +84,40 @@ const Projects = () => {
               media platform, automates several functions like commenting.
             </p>
             <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
-              <button className="text-sm text-white ">Github</button>
+              <a
+                href="https://github.com/afreenpoly/Instagram-Automation"
+                target="_blank"
+              >
+                <button className="text-sm text-white ">Github</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="pma"
+          className="flex border-2 shadow-2xl border-y-purple-600 rounded-3xl pr-5 py-7 hover:bg-gradient-to-bl bg-gradient-to-br from-projectcard via-navbar to-backfill"
+        >
+          <div className="flex">
+            <img
+              className="object-contain"
+              src={ProductImage}
+              alt="PMA"
+              width="200"
+            />
+          </div>
+          <div className="w-3/4">
+            <h2 className="text-4xl mb-3 mt-3 font-bold">PMA</h2>
+            <p className="text-xs">
+              Spring Boot web application for managing products
+            </p>
+            <div className="w-fit border-2 opacity-50 hover:opacity-100 border-x-purple-600 rounded-full  hover:bg-purple-600 hover:border-purple-800 px-2 mt-2">
+              <a
+                href="https://github.com/afreenpoly/Product-Management-App-Web"
+                target="_blank"
+              >
+                <button className="text-sm text-white ">Github</button>
+              </a>
             </div>
           </div>
         </div>

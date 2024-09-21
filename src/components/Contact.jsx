@@ -18,10 +18,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { firstName, lastName, email, message } = formData;
-    const mailtoLink = `mailto:afreendeby@gmail.com?subject=Contact Form Submission&body=First Name: ${firstName}%0D%0ALast Name: ${lastName}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+    const { email, message } = formData;
+    const name = `${formData.firstName} ${formData.lastName}`;
+    const mailtoLink = `mailto:afreendeby@gmail.com?subject=Contact Form Submission&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
     window.location.href = mailtoLink;
   };
+
 
   return (
     <div

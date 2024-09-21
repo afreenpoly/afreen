@@ -19,8 +19,13 @@ const Navbar = () => {
           <button className="opacity-45 hover:opacity-100">Contact Me</button>
         </Link>
       </div>
-      <div className="navbar w-fit flex items-center border-2 hover:bg-purple-700 bg-purple-600 px-2 ">
-        <button className="text-sm font-bold text-white ">My Resume</button>
+      <div className="navbar w-fit flex items-center border-2 rounded-2xl hover:bg-purple-700 bg-purple-600 px-2">
+        <a
+          href="https://drive.google.com/file/d/1P1rD7ojaDdtUp03LibKP2wjatSOclwiO/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="text-sm font-bold text-white">My Resume</button>
+        </a>
       </div>
     </div>
   );

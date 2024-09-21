@@ -18,7 +18,7 @@
     animation-range-end: 400px; /* Custom property, may need a custom implementation */
 }
 
-#auto {
+#auto,#pma {
     opacity: 0;
     animation: fade-in 8s ease forwards;
     /* Assuming these properties are custom attributes */
