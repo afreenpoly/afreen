@@ -28,9 +28,9 @@ const BackToTop = () => {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 transition-opacity ${
+      className={`fixed transition-opacity ${
         isVisible ? "visible" : ""
-      }`}
+      } back-to-top-btn`}
     >
       <button
         onClick={scrollToTop}
