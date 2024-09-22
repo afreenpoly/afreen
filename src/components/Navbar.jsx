@@ -3,15 +3,15 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <div className=" flex p-3 justify-between bg-navbar ">
+    <div className="flex p-3 justify-between bg-navbar">
       <div className="navbar">
         <Link to="#" smooth={true} duration={500}>
-          <button className="font-dancing-script text-4xl opacity-45 hover:opacity-100">
+          <button className="font-dancing-script text-3xl sm:text-4xl opacity-45 hover:opacity-100">
             afreee
           </button>
         </Link>
       </div>
-      <div className="navbar flex gap-x-4 font-poppins text-xl items-center">
+      <div className="navbar flex gap-x-2 sm:gap-x-4 font-poppins text-lg sm:text-xl items-center">
         <Link to="projects" smooth={true} offset={-19} duration={700}>
           <button className="opacity-45 hover:opacity-100">Projects</button>
         </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
           href="https://drive.google.com/file/d/1P1rD7ojaDdtUp03LibKP2wjatSOclwiO/view?usp=sharing"
           target="_blank"
         >
-          <button className="text-sm font-bold text-white">My Resume</button>
+          <button className="text-xs sm:text-sm font-bold text-white">My Resume</button>
         </a>
       </div>
     </div>

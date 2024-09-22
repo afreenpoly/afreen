@@ -17,16 +17,16 @@ const Profile = () => {
   return (
     <div>
       <div className="profile-container mb-7">
-        <div className="profile-details flex justify-between items-center">
-          <div className="text-section">
+        <div className="profile-details flex flex-col md:flex-row justify-between items-center">
+          <div className="text-section text-center md:text-left">
             <h1 className="gradient-text">Dream.</h1>
             <h1 className="gradient-text">Design.</h1>
             <h1 className="gradient-text">Develop.</h1>
           </div>
-          <div className="profile-details flex items-center">
-            <div className="pl-5 font-poppins  text-center">
+          <div className="profile-details flex flex-col md:flex-row items-center mt-5 md:mt-0">
+            <div className="pl-5 font-poppins text-center">
               <div className="flex justify-center items-center">
-              <img className="avatar" src={afreendpImage} alt="Afreen Profile Photo" />
+                <img className="avatar" src={afreendpImage} alt="Afreen Profile Photo" />
               </div>
               <h2 className="font-bold text-5xl">Afreen Poly</h2>
               <h3 className="text-md">Frontend Developer</h3>
