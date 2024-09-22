@@ -110,6 +110,11 @@
   font-size: 110px;
   font-weight: bold;
   margin: 0;
-  line-height: 1.28;
-  animation: gradientShift 5s ease-in-out infinite; /* Add animation */
+  line-height: 1.4; /* Increase line height */
+  animation: gradientShift 5s ease-in-out infinite;
 }
+
+.text-section {
+  
+}
+

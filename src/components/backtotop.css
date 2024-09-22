@@ -46,3 +46,18 @@
 .visible {
   opacity: 1;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .bottom-4 {
+    bottom: 2rem;
+  }
+
+  .right-4 {
+    right: 2rem;
+  }
+
+  .p-2 {
+    padding: 1rem;
+  }
+}
