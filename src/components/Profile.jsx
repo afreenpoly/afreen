@@ -18,30 +18,32 @@ const Profile = () => {
     <div>
       <div className="profile-container mb-7">
         <div className="profile-details flex flex-col md:flex-row justify-between items-center">
-          <div className="text-section">
-            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-4">
+          <div className="text-section py-2">
+            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-1 md:py-4">
               Dream.
             </h1>
-            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-4">
+            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-2 md:py-4">
               Design.
             </h1>
-            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-4">
+            <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-2 md:py-4">
               Develop.
             </h1>
           </div>
 
-          <div className="profile-details flex flex-col md:flex-row items-center mt-5 md:mt-0">
-            <div className="pl-5 font-poppins text-center">
+          <div className="profile-details flex flex-col ">
+            <div className="font-poppins text-center">
               <div className="flex justify-center items-center">
                 <img
-                  className="avatar w-24 h-24 md:w-48 md:h-48"
+                  className="avatar w-24 h-24 "
                   src={afreendpImage}
                   alt="Afreen Profile Photo"
                 />
               </div>
-              <h2 className="font-bold text-3xl md:text-5xl">Afreen Poly</h2>
+              <h2 className="font-bold text-3xl py-2 md:text-5xl">
+                Afreen Poly
+              </h2>
               <h3 className="text-sm md:text-md">Frontend Developer</h3>
-              <div className="flex justify-center p-4 md:p-8">
+              <div className="p-4">
                 <p className="text-sm md:text-base">
                   A self-taught UI/UX designer, functioning in the industry for
                   3+ years now. I make meaningful and delightful digital
