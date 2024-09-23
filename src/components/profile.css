@@ -6,8 +6,13 @@
   background: #472a70;
 }
 
-.profile-details{
-	z-index:5;
+.profile-details {
+  z-index: 5;
+}
+
+.profile-details p {
+  width: 90%;
+  margin: 0 auto; /* Center it */
 }
 
 .circles {
