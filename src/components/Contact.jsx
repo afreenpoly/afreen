@@ -24,14 +24,13 @@ const Contact = () => {
     window.location.href = mailtoLink;
   };
 
-
   return (
     <div
       id="contact"
-      className="border rounded-2xl border-white pl-6 pb-6 pt-4 pr-6 mt-9"
+      className="border rounded-2xl border-white p-4 sm:p-6 mt-9 mx-4 sm:mx-auto max-w-4xl"
     >
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl pb-5 ">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl pb-5">
           Contact
         </h2>
       </div>
@@ -50,7 +49,7 @@ const Contact = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="mx-auto mt-16 max-w-xl sm:mt-20 sm:ml-8 sm:w-1/2"
+          className="mx-auto mt-8 sm:mt-0 sm:ml-8 sm:w-1/2"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -64,7 +63,7 @@ const Contact = () => {
                   id="first-name"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="block w-full text-black rounded-md border-0 px-3.5 py-2  ring-1 ring-inset  focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full text-black rounded-md border-0 px-3.5 py-2 ring-1 ring-inset focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
             </div>

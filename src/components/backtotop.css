@@ -25,14 +25,16 @@
 
 /* Button positioning for larger screens */
 .back-to-top-btn {
-  right: 0.5rem;
-  bottom:1rem;
+  position: fixed;
+  right: 1.5rem; /* Adjusted for better visibility */
+  bottom: 1.5rem; /* Keep some distance from the bottom */
+  z-index: 1000;
 }
 
 /* Media query for smaller screens like phones */
 @media (max-width: 640px) {
   .back-to-top-btn {
-    left: 18rem;  /* Adjust to stay within viewport */
-    bottom: 1rem; /* Make sure it's not too close to the bottom */
+    right: 1rem; /* Adjust to stay within viewport on smaller screens */
+    bottom: 1rem; /* Same bottom spacing */
   }
 }

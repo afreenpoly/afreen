@@ -16,9 +16,9 @@ const Profile = () => {
 
   return (
     <div>
-      <div className="profile-container mb-7">
-        <div className="profile-details flex flex-col md:flex-row justify-between items-center">
-          <div className="text-section py-2">
+      <div className="profile-container mb-4 md:mb-14">
+        <div className="profile-details flex flex-col md:flex-row  items-center">
+          <div className="text-section py-2 flex flex-col justify-center items-center sm:justify-start sm:items-start">
             <h1 className="gradient-text text-5xl sm:text-6xl lg:text-7xl xl:text-8xl py-1 md:py-4">
               Dream.
             </h1>
@@ -30,7 +30,7 @@ const Profile = () => {
             </h1>
           </div>
 
-          <div className="profile-details flex flex-col ">
+          <div className="profile-details flex flex-col mt-9">
             <div className="font-poppins text-center">
               <div className="flex justify-center items-center">
                 <img
