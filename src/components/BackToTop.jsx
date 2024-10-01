@@ -5,10 +5,24 @@ const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.scrollY > 1400) {
-      setIsVisible(true);
+    const mobileBreakpoint = 640; // Tailwind's default 'sm' breakpoint (640px)
+    const mobileThreshold = 2800;
+    const desktopThreshold = 1400;
+
+    if (window.innerWidth <= mobileBreakpoint) {
+      // Mobile screen
+      if (window.scrollY > mobileThreshold) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     } else {
-      setIsVisible(false);
+      // Desktop screen
+      if (window.scrollY > desktopThreshold) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     }
   };
 
@@ -36,7 +50,24 @@ const BackToTop = () => {
         onClick={scrollToTop}
         className="p-2 rounded-full bg-indigo-600 text-white shadow-md hover:bg-indigo-500 focus:outline-none"
       >
-        Back to Top
+        {/* SVG for mobile */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 block sm:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 10l7-7m0 0l7 7m-7-7v18"
+          />
+        </svg>
+
+        {/* Text for PC */}
+        <span className="hidden sm:block">Back to Top</span>
       </button>
     </div>
   );
